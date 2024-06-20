@@ -1,0 +1,43 @@
+{
+  "name": "proiect_vinyl_basement",
+  "version": "1.0.0",
+  "description": "Proiect magazin online vinil",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexNegulescu111/Tehnici_web_test_ejs.git"
+  },
+  "keywords": [
+    "\"vinyl",
+    "basement",
+    "viniluri",
+    "discuri",
+    "de",
+    "vinil",
+    "magazin",
+    "discuri",
+    "de",
+    "vinil",
+    "muzica",
+    "veche",
+    "pickup",
+    "vinil",
+    "second",
+    "hand",
+    "ieftin",
+    "livrare\""
+  ],
+  "author": "Vinyl Basement",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexNegulescu111/Tehnici_web_test_ejs/issues"
+  },
+  "homepage": "https://github.com/AlexNegulescu111/Tehnici_web_test_ejs#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}

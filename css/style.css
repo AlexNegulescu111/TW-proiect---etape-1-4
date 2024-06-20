@@ -1,0 +1,105 @@
+@import "general.css";
+
+header{
+    background-color: var(--culoareBackgroundHeader);
+    border: thick solid black;
+    border-radius: 0.5cm;
+}
+
+h1, h2
+{
+    background-color: var(--culoareBackgroundParagraf);
+    color: var(--culoareTextH12);
+}
+
+h3, h4
+{
+    background-color: var(--culoareBackgroundParagraf);
+    color: var(--culoareTextH34);
+}
+
+p
+{
+    background-color: var(--culoareBackgroundParagraf);
+    color: var(--culoareTextP);
+}
+
+
+
+
+#flex-container-ifr{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    }
+    
+#flex-container-links{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    
+}
+#flex-container-links > div{
+background-color: var(--culoareBackgroundFooter);
+border: thick inset var(--culoareBackground);
+border-top-right-radius: 20px;
+}
+#flex-container-links>div:hover{
+    border: thick inset var(--culoareBackgroundFooter);
+    border-right: none;
+    border-bottom: none;
+    transition: 2s;
+}
+#flex-container-links a{
+        color: black;
+        text-decoration: none;
+}
+#flex-container-links a:hover{
+        color:white;
+        transition: 2s;
+}
+
+/* footer */
+
+footer{
+    border: thick solid black;
+    border-radius: 0.5cm;
+}
+#info-grid{
+    border-top: 10px solid black;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "info-list info-list info-loc";
+    background-color: var(--culoareBackgroundFooter);
+    h2, p, .footer_link{
+        color: black;
+        background-color: var(--culoareBackgroundFooter);
+        font-weight:bold;
+        font-size: larger;
+    }
+}
+#info-list{
+    grid-area: info-list;
+}
+#info-loc{
+    grid-area: info-loc;
+}
+
+@media screen and (max-width: 1200px){
+    body{
+        --dimSpatiere:100px;
+        font-size: 0.9em;
+        
+
+    }
+}
+@media screen and (max-width: 750px){
+    body{
+        --dimSpatiere:50px;
+        font-size: 0.8em;
+
+    }
+}    
+    
+

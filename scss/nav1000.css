@@ -1,0 +1,53 @@
+@import "general.css";
+@media screen and (max-width: 1000px) {
+  .meniu, .meniu > * {
+    display: block;
+  }
+  .meniu li {
+    border: 5px ridge black;
+    height: var(--inaltime-meniu);
+    width: auto;
+    transition: 1s;
+    margin: 0;
+    padding: 0;
+  }
+  .meniu li ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    transition: 1s;
+  }
+  .meniu li ul > * {
+    list-style: none;
+    position: relative;
+    background-color: var(--culoareBackground);
+    width: max-content;
+  }
+  .meniu li:hover {
+    background-color: var(--culoareBackgroundGrid);
+  }
+  .meniu li:hover ul {
+    display: block;
+    background-color: var(--culoareBackgroundGrid);
+    color: var(--culoareBackground);
+  }
+  .meniu li a {
+    text-decoration: none;
+    color: var(--culoareTextH34);
+    display: block;
+    height: 100%;
+    line-height: 100%;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .meniu li a:hover {
+    color: var(--culoareBackground);
+    font-weight: bold;
+  }
+  #acasa {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=nav1000.css.map */

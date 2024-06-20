@@ -1,0 +1,90 @@
+@import "general.css";
+
+#grid_mare
+{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "welcome welcome welcome"
+                         "calendar tabel anunturi"
+                         "lista_useri tabel anunturi"
+                         "lista_useri date_user_stats date_site_server"
+                         "relax FAQ FAQ";
+}
+#grid_mare>*
+{
+    outline: 2px solid var(--culoareBackgroundParagraf);
+    padding: 15px;
+    outline-style:double;
+    background-color: var(--culoareBackgroundGrid);
+    border: thick solid black;
+    border-radius: 0.5cm;
+
+}
+/*Denumire portiuni grid*/
+#welcome
+{
+    grid-area: welcome;
+}
+#tabel
+{
+    grid-area: tabel;
+}
+#calendar
+{
+    grid-area: calendar;
+}
+#anunturi
+{
+    grid-area: anunturi;
+}
+#lista_useri
+{
+    grid-area: lista_useri;
+}
+#date_user_stats
+{
+    grid-area: date_user_stats;
+}
+#date_site_server
+{
+    grid-area: date_site_server;
+}
+#relax
+{
+    grid-area:relax;
+}
+#FAQ
+{
+    grid-area: FAQ;
+}
+
+
+@media screen and (max-width: 1200px){
+    #grid_mare
+    {
+    display: grid;
+    grid-gap: 7px;
+    grid-template-areas: "welcome welcome"
+                         "calendar tabel"
+                         "lista_useri anunturi"
+                         " date_user_stats date_site_server"
+                         "relax FAQ";
+    }
+}
+@media screen and (max-width: 750px){
+    #grid_mare
+    {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-areas: "welcome "
+                         "calendar"
+                         "tabel"
+                         "anunturi"
+                         "lista_useri"
+                         "date_user_stats"
+                         "date_site_server"
+                         "relax"
+                         "FAQ";
+    }
+}    
+    

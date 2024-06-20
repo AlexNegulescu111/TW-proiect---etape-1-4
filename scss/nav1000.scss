@@ -1,0 +1,61 @@
+@import "general.css";
+$inaltime-meniu: 3rem;
+$latime-buton:100px;
+
+@media screen and (max-width: 1000px){
+
+    .meniu{
+        &, &>*{
+            display: block;
+        }
+        li{
+            border: 5px ridge black;
+            height: var(--inaltime-meniu);
+            width: auto;
+            transition: 1s;
+            margin: 0;
+            padding: 0;
+            ul{
+                display: none;
+                position: absolute;
+                width:100%;
+                z-index: 10;
+                transition: 1s;
+                &>*{
+                    list-style: none;
+        
+                    position: relative;
+                    background-color: var(--culoareBackground);
+                    width:max-content;
+                }
+                }
+            &:hover{
+                background-color: var(--culoareBackgroundGrid);
+                ul{
+                    display: block;
+                    background-color: var(--culoareBackgroundGrid);
+                    color: var(--culoareBackground);
+    
+                }
+            }
+            a{
+                text-decoration: none;
+                color: var(--culoareTextH34);
+                display: block;
+                height: 100%;
+                line-height: 100%;
+                cursor: pointer;
+                transition: 1s;
+                &:hover{
+                    color: var(--culoareBackground);
+                    font-weight: bold;
+                }
+            }
+        }
+    
+    }
+    #acasa{
+        display: block;    
+    }
+    
+}

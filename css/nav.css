@@ -1,0 +1,72 @@
+@import "general.css";
+
+nav{
+    --inaltime-meniu: 3rem;
+    --latime-buton:100px;
+    background-color: var(--culoareBackground);
+}
+
+.meniu > li > ul{
+    display: none;
+    position: absolute;
+    width:100%;
+    z-index: 10;
+    transition: 1s;
+
+}
+
+.meniu > li:hover > ul{
+    display: block;
+    background-color: var(--culoareBackgroundGrid);
+    color: var(--culoareBackground);
+}
+
+.meniu > li > ul > *{
+    list-style-type: none;
+    
+    position: relative;
+    background-color: var(--culoareBackground);
+    width: 150px;
+    /* margin-left: -43px; */
+   
+}
+#acasa{
+    display: block;    
+}
+
+.meniu, .meniu >*{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+}
+
+.meniu li{
+    border: 5px ridge black;
+    height: var(--inaltime-meniu);
+    width: 150px;
+    transition: 1s;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.meniu li:hover{
+    background-color: var(--culoareBackgroundGrid);
+}
+
+.meniu li a{
+    text-decoration: none;
+    color: var(--culoareTextH34);
+    display: block;
+    height: 100%;
+    line-height: 100%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.meniu li a:hover{
+    color: var(--culoareBackground);
+    font-weight: bold;
+    
+}
